@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DFCMyProfileView">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ve-QY-v5t">
+                    <rect key="frame" x="0.0" y="0.0" width="190" height="60"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Board_Profile" translatesAutoresizingMaskIntoConstraints="NO" id="WZY-Z6-x4t">
+                            <rect key="frame" x="130" y="0.0" width="60" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="pHo-nS-F8U"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-J3-hVQ">
+                            <rect key="frame" x="86.5" y="5" width="33.5" height="19"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="CJe-Hi-Fof"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.42352941179999998" green="0.83529411760000005" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zg-4C-bXu">
+                            <rect key="frame" x="89.5" y="25.5" width="30.5" height="0.0"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" id="MAL-n9-ias"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.42352941179999998" green="0.83529411760000005" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" layoutMarginsFollowReadableWidth="YES" text="ipad" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rNS-MJ-wDT">
+                            <rect key="frame" x="94" y="36" width="26" height="19"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19" id="GcH-bS-1cV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.42352941179999998" green="0.83529411760000005" blue="0.57647058819999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="WZY-Z6-x4t" firstAttribute="top" secondItem="5Ve-QY-v5t" secondAttribute="top" id="29o-f9-3ut"/>
+                        <constraint firstItem="8Zg-4C-bXu" firstAttribute="top" secondItem="lDg-J3-hVQ" secondAttribute="bottom" constant="1.5" id="GOv-OW-ANP"/>
+                        <constraint firstItem="WZY-Z6-x4t" firstAttribute="leading" secondItem="8Zg-4C-bXu" secondAttribute="trailing" constant="10" id="I94-Ka-xA7"/>
+                        <constraint firstItem="WZY-Z6-x4t" firstAttribute="leading" secondItem="lDg-J3-hVQ" secondAttribute="trailing" constant="10" id="NPV-yC-PMB"/>
+                        <constraint firstAttribute="bottom" secondItem="rNS-MJ-wDT" secondAttribute="bottom" constant="5" id="bJm-Ie-8dH"/>
+                        <constraint firstAttribute="trailing" secondItem="WZY-Z6-x4t" secondAttribute="trailing" id="fbc-kV-wmc"/>
+                        <constraint firstItem="WZY-Z6-x4t" firstAttribute="leading" secondItem="rNS-MJ-wDT" secondAttribute="trailing" constant="10" id="hy0-a0-gfJ"/>
+                        <constraint firstAttribute="bottom" secondItem="WZY-Z6-x4t" secondAttribute="bottom" id="jtl-bs-Inc"/>
+                        <constraint firstItem="lDg-J3-hVQ" firstAttribute="top" secondItem="5Ve-QY-v5t" secondAttribute="top" constant="5" id="wwY-XZ-Yix"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5Ve-QY-v5t" secondAttribute="bottom" id="9ag-lM-X05"/>
+                <constraint firstItem="5Ve-QY-v5t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Glm-9A-sK0"/>
+                <constraint firstItem="5Ve-QY-v5t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rzp-nD-0uU"/>
+                <constraint firstAttribute="trailing" secondItem="5Ve-QY-v5t" secondAttribute="trailing" id="mk4-EV-DT3"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="deviceCodeLabel" destination="rNS-MJ-wDT" id="sHJ-Nn-PLu"/>
+                <outlet property="studentCodeLabel" destination="8Zg-4C-bXu" id="jy5-YU-Az2"/>
+                <outlet property="studentIconImageView" destination="WZY-Z6-x4t" id="vHG-zU-deV"/>
+                <outlet property="studentNameLabel" destination="lDg-J3-hVQ" id="hM9-33-nrZ"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Board_Profile" width="58" height="58"/>
+    </resources>
+</document>

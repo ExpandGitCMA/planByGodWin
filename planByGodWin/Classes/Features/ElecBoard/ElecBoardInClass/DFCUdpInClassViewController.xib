@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DFCUdpInClassViewController">
+            <connections>
+                <outlet property="classCodeLabel" destination="x9c-h0-c6b" id="tm8-48-tWn"/>
+                <outlet property="onClassButton" destination="mGg-gs-kXz" id="Nvv-mP-Wb7"/>
+                <outlet property="qrcodeImageView" destination="COp-LH-cRI" id="xg0-KZ-zTN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9c-h0-c6b">
+                    <rect key="frame" x="170" y="323.5" width="35.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学生输入编码或者扫描二维码进入课堂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhy-wW-M11">
+                    <rect key="frame" x="40" y="294" width="295" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGg-gs-kXz">
+                    <rect key="frame" x="37" y="601" width="301" height="44"/>
+                    <color key="backgroundColor" red="0.29803921570000003" green="0.76470588240000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="301" id="Sat-xs-IBI"/>
+                        <constraint firstAttribute="height" constant="44" id="neb-kB-rQt"/>
+                    </constraints>
+                    <state key="normal" title="上课">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="下课"/>
+                    <connections>
+                        <action selector="onClassAction:" destination="-1" eventType="touchUpInside" id="Ol2-yo-3Ep"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="COp-LH-cRI">
+                    <rect key="frame" x="97" y="99" width="180" height="180"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="180" id="L6w-gX-J9M"/>
+                        <constraint firstAttribute="width" constant="180" id="xjA-3Y-pIH"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="COp-LH-cRI" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="036-hO-j2M"/>
+                <constraint firstItem="qhy-wW-M11" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="A1j-0f-HQI"/>
+                <constraint firstItem="x9c-h0-c6b" firstAttribute="top" secondItem="qhy-wW-M11" secondAttribute="bottom" constant="8" id="AQh-2r-OTi"/>
+                <constraint firstItem="qhy-wW-M11" firstAttribute="top" secondItem="COp-LH-cRI" secondAttribute="bottom" constant="15" id="D2J-XG-XqX"/>
+                <constraint firstAttribute="bottom" secondItem="mGg-gs-kXz" secondAttribute="bottom" constant="22" id="Dbd-tB-z1h"/>
+                <constraint firstItem="x9c-h0-c6b" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Mlp-GZ-3Fj"/>
+                <constraint firstItem="x9c-h0-c6b" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="aat-wt-Nd6"/>
+                <constraint firstItem="mGg-gs-kXz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="lc1-sa-YTC"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DFCCloudFileListCell">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="214"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="181" height="214"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudFile_cellBackground" translatesAutoresizingMaskIntoConstraints="NO" id="lPP-Df-bjb">
+                        <rect key="frame" x="0.0" y="0.0" width="181" height="170"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudFile_iconExcel" translatesAutoresizingMaskIntoConstraints="NO" id="5Gn-Ot-E1E">
+                        <rect key="frame" x="52" y="42" width="77" height="86"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="86" id="7Uy-PB-HUZ"/>
+                            <constraint firstAttribute="width" constant="77" id="XvT-uJ-Rlp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAC-2l-oDd">
+                        <rect key="frame" x="0.0" y="170" width="181" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="maG-AA-bCi">
+                        <rect key="frame" x="0.0" y="0.0" width="181" height="170"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NUF-X1-BdA">
+                                <rect key="frame" x="0.0" y="0.0" width="181" height="170"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="courseware_select" translatesAutoresizingMaskIntoConstraints="NO" id="8ok-GW-pom">
+                                <rect key="frame" x="80" y="75" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="AyV-qg-1TK"/>
+                                    <constraint firstAttribute="width" constant="20" id="Ofk-na-Jgx"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kI8-Ux-bz1">
+                                <rect key="frame" x="30" y="84" width="120" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="NJs-rc-b0G"/>
+                                    <constraint firstAttribute="height" constant="2" id="jEi-nN-NhJ"/>
+                                </constraints>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="NUF-X1-BdA" secondAttribute="trailing" id="AgT-nE-TyL"/>
+                            <constraint firstItem="8ok-GW-pom" firstAttribute="centerX" secondItem="maG-AA-bCi" secondAttribute="centerX" id="CDr-xQ-YyA"/>
+                            <constraint firstItem="NUF-X1-BdA" firstAttribute="leading" secondItem="maG-AA-bCi" secondAttribute="leading" id="Kta-5R-xpu"/>
+                            <constraint firstItem="kI8-Ux-bz1" firstAttribute="centerX" secondItem="8ok-GW-pom" secondAttribute="centerX" id="Kus-CD-FmG"/>
+                            <constraint firstItem="8ok-GW-pom" firstAttribute="centerY" secondItem="maG-AA-bCi" secondAttribute="centerY" id="OV0-Zl-3bf"/>
+                            <constraint firstAttribute="bottom" secondItem="NUF-X1-BdA" secondAttribute="bottom" id="XQ5-H9-NLE"/>
+                            <constraint firstItem="NUF-X1-BdA" firstAttribute="top" secondItem="maG-AA-bCi" secondAttribute="top" id="eIW-Q9-HrS"/>
+                            <constraint firstItem="kI8-Ux-bz1" firstAttribute="centerY" secondItem="8ok-GW-pom" secondAttribute="centerY" id="hJZ-bn-Bga"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已下载" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcG-7s-kuX">
+                        <rect key="frame" x="124" y="8" width="50" height="25"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Mul-Dt-IWM"/>
+                            <constraint firstAttribute="height" constant="25" id="ZBX-XR-4Ur"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="maG-AA-bCi" firstAttribute="trailing" secondItem="lPP-Df-bjb" secondAttribute="trailing" id="1zZ-rN-DYV"/>
+                <constraint firstItem="maG-AA-bCi" firstAttribute="bottom" secondItem="lPP-Df-bjb" secondAttribute="bottom" id="9cR-86-Icy"/>
+                <constraint firstItem="lPP-Df-bjb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ASx-pE-mmC"/>
+                <constraint firstAttribute="bottom" secondItem="kAC-2l-oDd" secondAttribute="bottom" id="Eqa-2d-mXL"/>
+                <constraint firstItem="AcG-7s-kuX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Vvg-iw-PkD"/>
+                <constraint firstItem="kAC-2l-oDd" firstAttribute="top" secondItem="lPP-Df-bjb" secondAttribute="bottom" id="Yfc-wq-Apf"/>
+                <constraint firstItem="lPP-Df-bjb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bO2-lN-aZT"/>
+                <constraint firstItem="5Gn-Ot-E1E" firstAttribute="centerY" secondItem="lPP-Df-bjb" secondAttribute="centerY" id="fSO-LQ-io8"/>
+                <constraint firstItem="maG-AA-bCi" firstAttribute="top" secondItem="lPP-Df-bjb" secondAttribute="top" id="iXm-3c-jEH"/>
+                <constraint firstAttribute="trailing" secondItem="lPP-Df-bjb" secondAttribute="trailing" id="l8t-OF-8uA"/>
+                <constraint firstAttribute="bottom" secondItem="lPP-Df-bjb" secondAttribute="bottom" constant="44" id="m5B-nn-6Ro"/>
+                <constraint firstItem="maG-AA-bCi" firstAttribute="leading" secondItem="lPP-Df-bjb" secondAttribute="leading" id="mwf-Iq-jmC"/>
+                <constraint firstAttribute="trailing" secondItem="kAC-2l-oDd" secondAttribute="trailing" id="opK-g9-ZVQ"/>
+                <constraint firstAttribute="trailing" secondItem="AcG-7s-kuX" secondAttribute="trailing" constant="7" id="rC1-2M-gO9"/>
+                <constraint firstItem="5Gn-Ot-E1E" firstAttribute="centerX" secondItem="lPP-Df-bjb" secondAttribute="centerX" id="uXi-B9-FuL"/>
+                <constraint firstItem="kAC-2l-oDd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ws5-rG-EEP"/>
+            </constraints>
+            <size key="customSize" width="181" height="214"/>
+            <connections>
+                <outlet property="cloud" destination="lPP-Df-bjb" id="D7g-cx-gTO"/>
+                <outlet property="downLoadedTip" destination="AcG-7s-kuX" id="wx2-I3-I83"/>
+                <outlet property="fileIcon" destination="5Gn-Ot-E1E" id="2O3-V6-3rv"/>
+                <outlet property="fileNameLabel" destination="kAC-2l-oDd" id="Svu-mH-aep"/>
+                <outlet property="progressView" destination="kI8-Ux-bz1" id="oez-DO-y6F"/>
+                <outlet property="selectedMark" destination="8ok-GW-pom" id="1l8-22-bgn"/>
+                <outlet property="statusView" destination="maG-AA-bCi" id="On1-rw-s49"/>
+            </connections>
+            <point key="canvasLocation" x="-74.5" y="70"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="cloudFile_cellBackground" width="165" height="112"/>
+        <image name="cloudFile_iconExcel" width="77" height="86"/>
+        <image name="courseware_select" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DFCDownloadInStoreController">
+            <connections>
+                <outlet property="cancelBtn" destination="uUi-4Y-7fq" id="QyR-mV-fKe"/>
+                <outlet property="processLabel" destination="Bid-Qo-HhG" id="hUS-6I-FAj"/>
+                <outlet property="progressView" destination="M86-zx-TLJ" id="agI-Ee-Uk2"/>
+                <outlet property="statusLabel" destination="UjI-H7-Ju8" id="dJj-sB-bYM"/>
+                <outlet property="uploadBackground" destination="oY1-Bc-LyR" id="LZO-DZ-iKx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始下载" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjI-H7-Ju8">
+                    <rect key="frame" x="150.5" y="166.5" width="73.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bid-Qo-HhG">
+                    <rect key="frame" x="174.5" y="247.5" width="25" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUi-4Y-7fq">
+                    <rect key="frame" x="92" y="408.5" width="55" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="dhp-Eo-x9C"/>
+                    </constraints>
+                    <state key="normal" title="取消下载">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelDownload:" destination="-1" eventType="touchUpInside" id="jDs-I5-9EC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY1-Bc-LyR">
+                    <rect key="frame" x="227" y="408.5" width="55" height="40"/>
+                    <color key="backgroundColor" red="0.37483698129999998" green="0.80065721270000001" blue="0.46500414610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="后台下载">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="setRecordOrPresent:" destination="-1" eventType="touchUpInside" id="vbp-h1-Rf3"/>
+                    </connections>
+                </button>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="M86-zx-TLJ">
+                    <rect key="frame" x="62" y="298.5" width="250" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="Ntz-6s-gkx"/>
+                    </constraints>
+                    <color key="progressTintColor" red="0.14362559559999999" green="1" blue="0.42833646749999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.59979666095890416" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Bid-Qo-HhG" firstAttribute="top" secondItem="UjI-H7-Ju8" secondAttribute="bottom" constant="60" id="0H3-R3-RsD"/>
+                <constraint firstItem="oY1-Bc-LyR" firstAttribute="trailing" secondItem="M86-zx-TLJ" secondAttribute="trailing" constant="-30" id="DSF-n3-YZk"/>
+                <constraint firstItem="M86-zx-TLJ" firstAttribute="top" secondItem="Bid-Qo-HhG" secondAttribute="bottom" constant="30" id="GOp-za-TyJ"/>
+                <constraint firstItem="Bid-Qo-HhG" firstAttribute="centerX" secondItem="M86-zx-TLJ" secondAttribute="centerX" id="Hlo-yK-Leb"/>
+                <constraint firstItem="UjI-H7-Ju8" firstAttribute="centerX" secondItem="M86-zx-TLJ" secondAttribute="centerX" id="NA1-RQ-Z93"/>
+                <constraint firstItem="oY1-Bc-LyR" firstAttribute="centerY" secondItem="uUi-4Y-7fq" secondAttribute="centerY" id="Pi1-hP-igy"/>
+                <constraint firstItem="oY1-Bc-LyR" firstAttribute="leading" secondItem="uUi-4Y-7fq" secondAttribute="trailing" constant="80" id="aQH-23-xye"/>
+                <constraint firstItem="uUi-4Y-7fq" firstAttribute="width" secondItem="oY1-Bc-LyR" secondAttribute="width" id="dIW-XK-CDt"/>
+                <constraint firstItem="M86-zx-TLJ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-30" id="evp-Ru-k8l"/>
+                <constraint firstItem="uUi-4Y-7fq" firstAttribute="leading" secondItem="M86-zx-TLJ" secondAttribute="leading" constant="30" id="jyz-QA-nmo"/>
+                <constraint firstItem="M86-zx-TLJ" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="2:3" id="oKX-ka-msv"/>
+                <constraint firstItem="uUi-4Y-7fq" firstAttribute="height" secondItem="oY1-Bc-LyR" secondAttribute="height" id="tYU-9i-AqS"/>
+                <constraint firstItem="uUi-4Y-7fq" firstAttribute="top" secondItem="M86-zx-TLJ" secondAttribute="bottom" constant="100" id="tiu-bT-aW1"/>
+                <constraint firstItem="M86-zx-TLJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wqn-X4-F38"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-106" y="-60"/>
+        </view>
+    </objects>
+</document>

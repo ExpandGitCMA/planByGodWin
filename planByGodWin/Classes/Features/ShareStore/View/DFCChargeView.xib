@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DFCChargeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="iqL-hh-HmK">
+                    <rect key="frame" x="157.5" y="66" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="2TB-Fq-8Qm"/>
+                        <constraint firstAttribute="height" constant="60" id="T2f-Eu-o5n"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZ5-p8-nJ1">
+                    <rect key="frame" x="169.5" y="134" width="36.5" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="crm-UX-tjx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="此课件为免费" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJM-iK-t63">
+                    <rect key="frame" x="135.5" y="255" width="104" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="yLc-zV-s26"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGN-Bj-ufW">
+                    <rect key="frame" x="27.5" y="356" width="320" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="PMI-rR-7FD"/>
+                        <constraint firstAttribute="height" constant="40" id="Sii-k1-CZ5"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="dc5-mC-CRf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="upC-bP-9J5">
+                    <rect key="frame" x="28" y="416" width="320" height="40"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="buttonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Lkx-OZ-lNf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="UJM-iK-t63" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="2wo-bg-oim"/>
+                <constraint firstItem="upC-bP-9J5" firstAttribute="width" secondItem="OGN-Bj-ufW" secondAttribute="width" id="BYG-9C-lEd"/>
+                <constraint firstItem="upC-bP-9J5" firstAttribute="height" secondItem="OGN-Bj-ufW" secondAttribute="height" id="Cft-or-yCK"/>
+                <constraint firstItem="wZ5-p8-nJ1" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="F4R-CN-YTQ"/>
+                <constraint firstItem="OGN-Bj-ufW" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Iv8-5Q-YaJ"/>
+                <constraint firstItem="upC-bP-9J5" firstAttribute="top" secondItem="OGN-Bj-ufW" secondAttribute="bottom" constant="20" id="S0o-mr-ck9"/>
+                <constraint firstItem="iqL-hh-HmK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="66" id="Wc4-Cn-Nqn"/>
+                <constraint firstItem="upC-bP-9J5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="aXm-l8-8ef"/>
+                <constraint firstItem="OGN-Bj-ufW" firstAttribute="top" secondItem="UJM-iK-t63" secondAttribute="bottom" constant="80" id="cQv-ts-eOT"/>
+                <constraint firstItem="iqL-hh-HmK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hcv-wn-9FN"/>
+                <constraint firstItem="wZ5-p8-nJ1" firstAttribute="top" secondItem="iqL-hh-HmK" secondAttribute="bottom" constant="8" id="paI-AW-7WJ"/>
+                <constraint firstItem="UJM-iK-t63" firstAttribute="top" secondItem="wZ5-p8-nJ1" secondAttribute="bottom" constant="100" id="vkZ-On-eWd"/>
+            </constraints>
+            <connections>
+                <outlet property="cancelButton" destination="upC-bP-9J5" id="PZj-RR-rE5"/>
+                <outlet property="confirmButton" destination="OGN-Bj-ufW" id="pUH-mN-4IN"/>
+                <outlet property="iconImgView" destination="iqL-hh-HmK" id="XTw-TN-tdc"/>
+                <outlet property="messageLabel" destination="UJM-iK-t63" id="q1y-NS-wyV"/>
+                <outlet property="projectNameLabel" destination="wZ5-p8-nJ1" id="FWT-JT-su3"/>
+            </connections>
+            <point key="canvasLocation" x="-138.5" y="-15.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="36" height="36"/>
+    </resources>
+</document>

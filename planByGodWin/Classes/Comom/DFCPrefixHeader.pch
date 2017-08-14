@@ -1,0 +1,134 @@
+//
+//  DFCPrefixHeader.pch
+//  planByGodWin
+//
+//  Created by DaFenQi on 16/11/18.
+//  Copyright © 2016年 DFC. All rights reserved.
+//
+
+#ifndef DFCPrefixHeader_pch
+#define DFCPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+#import "DFCHeader_pch.h"
+#import "DFCViewGenerator.h"
+#import "UIView+DFCLayerCorner.h"
+#import "UIImageView+WebCache.h"
+#import "DFCFileHelp.h"
+#import "NSUserDefaultsManager.h"
+#import "DFCUtility.h"
+#import "DFCDateHelp.h"
+#import "DFCDownloadHelp.h"
+#import "UIImageView+AFNetworking.h"
+#import "DFCCommonHeaderInfo.h"
+#import "DFCProgressHUD.h"
+#import "MBProgressHUD.h"
+#import "DFCCommandManager.h"
+#import "DFCLogoutCommand.h"
+#import "UISlider+DFCStyle.h"
+#import "DFCMessageManager.h"
+#endif
+
+// 通知
+#define DFC_LOGIN_SUCCESS_NOTIFICATION @"DFC_LOGIN_SUCCESS_NOTIFICATION" // 下载成功
+#define DFC_DOWNLOADTASK_FINISHED_NOTIFICATION @"DFC_DOWNLOADTASK_FINISHED_NOTIFICATION" // 一个任务完成
+#define DFC_RECEIVED_STUDENT_RECEIVE_DETAIL_NOTIFICATION @"DFC_RECEIVED_STUDENT_RECEIVE_DETAIL_NOTIFICATION" //课件接受情况通知
+#define DFC_STUDENT_RECEIVED_COURSEWARE_PUSH_NOTIFICATION @"DFC_STUDENT_RECEIVED_COURSEWARE_PUSH_NOTIFICATION" //收到课件推送通知
+#define DFC_SYLLABUS_DATA_LOAD_COMPLETE @"DFC_SYLLABUS_DATA_LOAD_COMPLETE" //课表数据刷新通知
+#define DFC_RECEIVED_STUDENT_RECEIVE_DETAIL_NOTIFICATION @"DFC_RECEIVED_STUDENT_RECEIVE_DETAIL_NOTIFICATION"
+#define DFC_STUDENT_RECEIVED_COURSEWARE_PUSH_NOTIFICATION @"DFC_STUDENT_RECEIVED_COURSEWARE_PUSH_NOTIFICATION"
+#define DFC_DOWNLOADTASK_DELETE_NOTIFICATION @"DFC_DOWNLOADTASK_DELETE_NOTIFICATION" // 一个任务删除
+#define DFC_NEWTASK_NOTIFICATION @"DFC_NEWTASK_NOTIFICATION" // 新任务
+#define DFC_TEACHER_RECEIVE_STUDENT_SUCCESS_NOTIFICATION @"DFC_TEACHER_RECEIVE_STUDENT_SUCCESS_NOTIFICATION"
+#define DFC_COURSEWARE_SEND_SUCCESS_NOTIFICATION @"DFC_COURSEWARE_SEND_SUCCESS_NOTIFICATION"
+
+//课件列表通知
+#define DFC_COURSEWARE_DOWNLOADING_NOTIFICATION @"DFC_COURSEWARE_DOWNLOADING_NOTIFICATION"//课件下载进行时通知
+#define DFC_COURSEWARE_DOWNLOADED_NOTIFICATION @"DFC_COURSEWARE_DOWNLOADED_NOTIFICATION"//课件下载完成通知
+#define DFC_COURSEWARE_SENDED_NOTIFICATION @"DFC_COURSEWARE_SENDED_NOTIFICATION"//课件发送通知
+
+// add by hmy airdrop
+#define DFC_RECEIVE_COURSEWARE_FROMAIRDROP_NOTIFICATION @"DFC_RECEIVE_COURSEWARE_FROMAIRDROP_NOTIFICATION"//收到airdrop课件
+#define DFC_SAVE_COURSEWARE_SUCCESS_NOTIFICATION @"DFC_SAVE_COURSEWARE_SUCCESS_NOTIFICATION"//
+#define DFC_UPLOAD_COURSEWARE_SUCCESS_NOTIFICATION @"DFC_UPLOAD_COURSEWARE_SUCCESS_NOTIFICATION"//
+
+#define DFC_COURSEWARE_UPLOAD_ONCE_NOTIFICATION @"DFC_COURSEWARE_UPLOAD_ONCE_NOTIFICATION"//课件临时上传
+
+//云文件列表通知
+#define DFC_CLOUDFILE_DOWNLOADING_NOTIFICATION @"DFC_CLOUDFILE_DOWNLOADING_NOTIFICATION"//云文件下载进行时通知
+#define DFC_CLOUDFILE_DOWNLOADED_NOTIFICATION @"DFC_CLOUDFILE_DOWNLOADED_NOTIFICATION"//云文件下载完成通知
+
+
+// 商城
+#define DFC_SHARESTORE_DELETECOURSEWARE_NOTIFICATION @"DFC_SHARESTORE_DELETECOURSEWARE_NOTIFICATION"    //  删除我的答享圈中课件
+#define DFC_SHARESTORE_UPDATECOURSEWARE_NOTIFICATION @"DFC_SHARESTORE_UPDATECOURSEWARE_NOTIFICATION"    //  更新我的商城中课件信息
+#define DFC_SHARESTORE_CONTACTFILE_NOTIFICATION @"DFC_SHARESTORE_CONTACTFILE_NOTIFICATION"  // 关联课件之后通知
+
+//录播系统相关通知
+#define DFC_RP_CONNECTION_STATUS_NOTIFICATION @"DFC_RP_CONNECTION_STATUS_NOTIFICATION"//录播服务器连接状态通知
+
+#define DFC_Has_StudentWork_Notification @"DFC_Has_StudentWork_Notification" // 学生作品
+#define DFC_OnClass_Success_Notification @"DFC_OnClass_Success_Notification"
+#define DFC_OffClass_Success_Notification @"DFC_OffClass_Success_Notification"
+#define DFC_Has_StudentConnect_Notification @"DFC_Has_StudentConnect_Notification" // 学生连接
+
+//个人中心通知
+#define DFC_PROFILE_CHANGEHEADIMAGE_NOTIFICATION @"DFC_PROFILE_CHANGEHEADIMAGE_NOTIFICATION"//头像修改通知
+
+// help
+#define DFCUserDefaultManager [NSUserDefaultsManager shareManager]
+#define DFCNotificationCenter [NSNotificationCenter defaultCenter]
+
+// 图片临时目录
+#define kTempImagePath [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/tempImage"]
+
+#define kStudentWorkImagePath [NSHomeDirectory() stringByAppendingPathComponent:@"tmp"]
+#define kStudentWorksPath [NSHomeDirectory() stringByAppendingPathComponent:@"Library/studentWorks.plist"]
+
+#define kMaxStudentNameLength 20
+#define kMaxImageDataLength     10
+
+// 局域网学生作品
+#define kStudentWorksImageBasePath [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/studentworks"]
+
+#define kDFCCustomPhotoAlbumName @"答尔问智汇课堂"
+
+#define PPT_URL_SCHEME @"launch-ppt://"
+// 科目类型
+#define Subject_Chinese @"语文"
+#define Subject_Math @"数学"
+#define Subject_English @"英文"
+#define Subject_Physics @"物理"
+#define Subject_Chemistry @"化学"
+#define Subject_Biology @"生物"
+#define Subject_Politics @"政治"
+#define Subject_History @"历史"
+#define Subject_Art @"美术"
+#define Subject_Geography @"地理"
+#define Subject_Music @"音乐"
+#define Subject_Other @"其他"
+
+#define MQUserToken @"MQUserToken"
+#define MQMeassge @"MQMeassge"//MQ网络联系人页面显示推送
+#define MQMsgAlonePush        @"MsgAlonePush "//显示消息页面聊天消息推送
+#define MQMsgPush                 @"MQMsgPush" //显示消息提醒
+#define MQOFlineMsg                @"MQOFlineMsg"//MQ下线提醒
+
+#define DFCLogoutNotification    @"DFCLogoutNotification"// 登出释放资源
+#define DFCOnClassNotification    @"DFCOnClassNotification"// 上课释放资源
+#define DFCPaySuccessNotification    @"DFCPaySuccessNotification"// 支付成功通知
+
+
+#define DFCPresentProcessViewNotification   @"DFCPresentProcessViewNotification"     // 上传、下载或者发送时弹出进度界面
+//static NSString *const DFCCoursewareListIdentifier = @"DFCCoursewareListIdentifier";    // 在我的课件界面弹出进度界面的标识
+// add by hmy
+#define kDEWFileType                @"dew"
+#define kZipFileType                @"zip"
+#define kCoursewareInfoName         @"info.dew"
+
+
+
+#endif /* DFCPrefixHeader_pch */

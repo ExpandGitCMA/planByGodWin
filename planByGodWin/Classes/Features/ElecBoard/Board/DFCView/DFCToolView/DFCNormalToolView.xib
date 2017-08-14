@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DFCNormalToolView">
+            <rect key="frame" x="0.0" y="0.0" width="44" height="176"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Poe-WP-F5H">
+                    <rect key="frame" x="0.0" y="132" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="tP3-Al-KCO"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="Board_Text_U"/>
+                    <state key="selected" image="Board_Text_S"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1LC-eP-JHI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIT-PB-p2Y">
+                    <rect key="frame" x="0.0" y="88" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="l1C-1A-O08"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="Board_Add_U"/>
+                    <state key="selected" image="Board_Add_S"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="rYn-Ie-ISb"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MZa-ju-c8i">
+                    <rect key="frame" x="0.0" y="44" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="DnT-DZ-pYM"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="Board_Shape_U"/>
+                    <state key="selected" image="Board_Shape_S"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ouy-wb-A1L"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ElecBoard_Noraml_Tool_S" translatesAutoresizingMaskIntoConstraints="NO" id="H5x-Qm-COz">
+                    <rect key="frame" x="32" y="76" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12" id="eAD-tO-tGd"/>
+                        <constraint firstAttribute="height" constant="12" id="hFh-ch-zw4"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nie-cx-7fV">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="c8E-OC-iVD"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="Board_Pen_U"/>
+                    <state key="selected" image="Board_Pen_S"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="JEz-Mf-UoV"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ElecBoard_Noraml_Tool_S" translatesAutoresizingMaskIntoConstraints="NO" id="IAy-o7-ORG">
+                    <rect key="frame" x="32" y="32" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="jbO-UC-0xK"/>
+                        <constraint firstAttribute="width" constant="12" id="x4z-rR-dtY"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ElecBoard_Noraml_Tool_S" translatesAutoresizingMaskIntoConstraints="NO" id="1ZT-3W-7fi">
+                    <rect key="frame" x="32" y="120" width="12" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="12" id="76H-zr-WGC"/>
+                        <constraint firstAttribute="width" constant="12" id="go7-sd-fBM"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Nie-cx-7fV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="45J-iu-qaY"/>
+                <constraint firstAttribute="trailing" secondItem="Nie-cx-7fV" secondAttribute="trailing" id="4IH-U1-lUD"/>
+                <constraint firstItem="Poe-WP-F5H" firstAttribute="top" secondItem="1ZT-3W-7fi" secondAttribute="bottom" id="4cs-gy-kwZ"/>
+                <constraint firstItem="MZa-ju-c8i" firstAttribute="top" secondItem="IAy-o7-ORG" secondAttribute="bottom" id="A41-5y-1zD"/>
+                <constraint firstAttribute="trailing" secondItem="Poe-WP-F5H" secondAttribute="trailing" id="CNy-Zd-D2i"/>
+                <constraint firstAttribute="trailing" secondItem="1ZT-3W-7fi" secondAttribute="trailing" id="EZ7-1E-pje"/>
+                <constraint firstAttribute="trailing" secondItem="IAy-o7-ORG" secondAttribute="trailing" id="Fl0-dz-tFK"/>
+                <constraint firstItem="sIT-PB-p2Y" firstAttribute="top" secondItem="H5x-Qm-COz" secondAttribute="bottom" id="Frs-1T-pd7"/>
+                <constraint firstItem="MZa-ju-c8i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="G1c-rO-gap"/>
+                <constraint firstAttribute="trailing" secondItem="H5x-Qm-COz" secondAttribute="trailing" id="IRR-8Q-JBE"/>
+                <constraint firstItem="Poe-WP-F5H" firstAttribute="top" secondItem="sIT-PB-p2Y" secondAttribute="bottom" id="NVh-cj-j78"/>
+                <constraint firstAttribute="trailing" secondItem="MZa-ju-c8i" secondAttribute="trailing" id="OZf-m1-gSZ"/>
+                <constraint firstItem="Nie-cx-7fV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tvb-wy-MNl"/>
+                <constraint firstItem="IAy-o7-ORG" firstAttribute="bottom" secondItem="Nie-cx-7fV" secondAttribute="bottom" id="cU9-YO-uGT"/>
+                <constraint firstItem="sIT-PB-p2Y" firstAttribute="top" secondItem="MZa-ju-c8i" secondAttribute="bottom" id="fMD-d3-NDo"/>
+                <constraint firstItem="sIT-PB-p2Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="r8n-P5-mjx"/>
+                <constraint firstItem="Poe-WP-F5H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="t60-Tx-GyK"/>
+                <constraint firstAttribute="trailing" secondItem="sIT-PB-p2Y" secondAttribute="trailing" id="uHy-TU-S9T"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addSelectView" destination="1ZT-3W-7fi" id="Dk5-a3-lwc"/>
+                <outlet property="addTextButton" destination="Poe-WP-F5H" id="7pO-cO-pdh"/>
+                <outlet property="handButton" destination="Nie-cx-7fV" id="Zef-mk-87s"/>
+                <outlet property="pencilSelectView" destination="IAy-o7-ORG" id="11b-6q-JlF"/>
+                <outlet property="shapeSelectView" destination="H5x-Qm-COz" id="7fB-RT-Rcu"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Board_Add_S" width="24" height="24"/>
+        <image name="Board_Add_U" width="24" height="24"/>
+        <image name="Board_Pen_S" width="33" height="33"/>
+        <image name="Board_Pen_U" width="33" height="33"/>
+        <image name="Board_Shape_S" width="33" height="33"/>
+        <image name="Board_Shape_U" width="33" height="33"/>
+        <image name="Board_Text_S" width="22" height="22"/>
+        <image name="Board_Text_U" width="22" height="22"/>
+        <image name="ElecBoard_Noraml_Tool_S" width="12" height="12"/>
+    </resources>
+</document>

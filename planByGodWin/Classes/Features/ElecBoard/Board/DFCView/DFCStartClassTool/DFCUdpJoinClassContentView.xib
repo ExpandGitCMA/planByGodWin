@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DFCUdpJoinClassContentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xY-6F-wfh">
+                    <rect key="frame" x="22" y="68" width="50" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="BqY-7F-Pi3"/>
+                        <constraint firstAttribute="height" constant="18" id="aZV-jY-W7E"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入课堂邀请码加入课堂" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WdM-QJ-w09">
+                    <rect key="frame" x="87" y="55" width="167" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="JQl-sU-jjR"/>
+                        <constraint firstAttribute="height" constant="44" id="uE5-TI-BBZ"/>
+                    </constraints>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icZ-b5-w6m">
+                    <rect key="frame" x="269" y="65" width="84" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="84" id="DON-uH-SZA"/>
+                        <constraint firstAttribute="height" constant="25" id="ZYD-TH-2qe"/>
+                    </constraints>
+                    <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="titleEdgeInsets" minX="-20" minY="0.0" maxX="20" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="StartClass_Scan">
+                        <string key="title" base64-UTF8="YES">
+COaJq+S4gOaJqw
+</string>
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="scanAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="orq-k1-Zzj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WdM-QJ-w09" firstAttribute="leading" secondItem="0xY-6F-wfh" secondAttribute="trailing" constant="15" id="0bn-yt-xv7"/>
+                <constraint firstItem="WdM-QJ-w09" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="55" id="BPc-rh-LFH"/>
+                <constraint firstItem="0xY-6F-wfh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="22" id="GyM-6q-kV3"/>
+                <constraint firstItem="WdM-QJ-w09" firstAttribute="leading" secondItem="0xY-6F-wfh" secondAttribute="trailing" constant="15" id="PlB-kH-DbT"/>
+                <constraint firstAttribute="trailing" secondItem="icZ-b5-w6m" secondAttribute="trailing" constant="22" id="bWP-qy-Li0"/>
+                <constraint firstItem="icZ-b5-w6m" firstAttribute="centerY" secondItem="WdM-QJ-w09" secondAttribute="centerY" id="eNn-yO-GHA"/>
+                <constraint firstItem="WdM-QJ-w09" firstAttribute="centerY" secondItem="0xY-6F-wfh" secondAttribute="centerY" id="mvo-BQ-arx"/>
+                <constraint firstItem="icZ-b5-w6m" firstAttribute="leading" secondItem="WdM-QJ-w09" secondAttribute="trailing" constant="15" id="tMX-hr-Xzq"/>
+            </constraints>
+            <connections>
+                <outlet property="classCodeTextField" destination="WdM-QJ-w09" id="aKD-8h-BcM"/>
+            </connections>
+            <point key="canvasLocation" x="110.5" y="81.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="StartClass_Scan" width="26" height="26"/>
+    </resources>
+</document>

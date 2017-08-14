@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ControlBoardPlayView">
+            <rect key="frame" x="0.0" y="0.0" width="305" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhb-JM-6iE">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="e1P-kg-whj"/>
+                    </constraints>
+                    <color key="tintColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="Board_Last">
+                        <color key="titleColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="lastPageAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1Nn-fW-Pgp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VUa-eD-cvD">
+                    <rect key="frame" x="217" y="0.0" width="44" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="ckQ-QR-5BP"/>
+                    </constraints>
+                    <color key="tintColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="imageEdgeInsets" minX="12" minY="12" maxX="12" maxY="12"/>
+                    <state key="normal" image="Board_Add_U"/>
+                    <connections>
+                        <action selector="createPageAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ul3-3Q-Xgr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hq-UT-XkP">
+                    <rect key="frame" x="261" y="0.0" width="44" height="44"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="LKC-la-yrh"/>
+                    </constraints>
+                    <color key="tintColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="Board_Next"/>
+                    <connections>
+                        <action selector="nextPageAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="JJC-Bo-DjK"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTc-T7-VjX">
+                    <rect key="frame" x="44" y="0.0" width="173" height="44"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="112" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="页面: 999/999" image="Board_Preview">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <state key="selected" title="页面: 999/999" image="Board_Up_Row"/>
+                    <connections>
+                        <action selector="previewAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="YBd-be-2gO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmu-jX-1XT">
+                    <rect key="frame" x="261" y="0.0" width="0.0" height="44"/>
+                    <color key="backgroundColor" red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="8g6-KT-jeu"/>
+                    </constraints>
+                    <state key="normal" image="Board_Enlarge_U">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="Board_Enlarge_S"/>
+                    <connections>
+                        <action selector="scaleAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="9Fz-d7-JXM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="bmu-jX-1XT" secondAttribute="bottom" id="3Oy-Jj-oMZ"/>
+                <constraint firstAttribute="bottom" secondItem="VUa-eD-cvD" secondAttribute="bottom" id="3gc-i1-UiU"/>
+                <constraint firstItem="bmu-jX-1XT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3us-Fy-Bfq"/>
+                <constraint firstAttribute="bottom" secondItem="aTc-T7-VjX" secondAttribute="bottom" id="4PA-B2-dxo"/>
+                <constraint firstAttribute="bottom" secondItem="6hq-UT-XkP" secondAttribute="bottom" id="8P9-Oj-evt"/>
+                <constraint firstItem="VUa-eD-cvD" firstAttribute="leading" secondItem="aTc-T7-VjX" secondAttribute="trailing" id="Gn6-1s-MkW"/>
+                <constraint firstAttribute="bottom" secondItem="rhb-JM-6iE" secondAttribute="bottom" id="Qci-RY-gZk"/>
+                <constraint firstAttribute="trailing" secondItem="6hq-UT-XkP" secondAttribute="trailing" id="REn-OL-Ulc"/>
+                <constraint firstItem="VUa-eD-cvD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RRc-kX-U2A"/>
+                <constraint firstItem="bmu-jX-1XT" firstAttribute="leading" secondItem="VUa-eD-cvD" secondAttribute="trailing" id="Uti-ZU-IZo"/>
+                <constraint firstItem="rhb-JM-6iE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aJ0-Em-YVq"/>
+                <constraint firstItem="6hq-UT-XkP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="afJ-xw-HnF"/>
+                <constraint firstItem="6hq-UT-XkP" firstAttribute="leading" secondItem="bmu-jX-1XT" secondAttribute="trailing" id="giz-8p-NF0"/>
+                <constraint firstItem="rhb-JM-6iE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="oIW-dn-YBX"/>
+                <constraint firstItem="aTc-T7-VjX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="tbd-j1-RBh"/>
+                <constraint firstItem="aTc-T7-VjX" firstAttribute="leading" secondItem="rhb-JM-6iE" secondAttribute="trailing" id="wlk-qS-0eo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="createPageButton" destination="VUa-eD-cvD" id="5ML-UE-QsL"/>
+                <outlet property="lastPageButton" destination="rhb-JM-6iE" id="YNo-sU-l61"/>
+                <outlet property="nextPageButton" destination="6hq-UT-XkP" id="ihO-dU-iEe"/>
+                <outlet property="previewButton" destination="aTc-T7-VjX" id="Eos-us-zCt"/>
+                <outlet property="scaleButton" destination="bmu-jX-1XT" id="8S6-Ak-f5J"/>
+            </connections>
+            <point key="canvasLocation" x="158.5" y="-22"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Board_Add_U" width="24" height="24"/>
+        <image name="Board_Enlarge_S" width="20" height="20"/>
+        <image name="Board_Enlarge_U" width="20" height="20"/>
+        <image name="Board_Last" width="20" height="20"/>
+        <image name="Board_Next" width="20" height="20"/>
+        <image name="Board_Preview" width="12" height="12"/>
+        <image name="Board_Up_Row" width="12" height="12"/>
+    </resources>
+</document>

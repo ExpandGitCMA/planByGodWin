@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DFCTradeCenterController">
+            <connections>
+                <outlet property="calculateCenterButton" destination="LQl-2g-F26" id="YLb-Ck-QSe"/>
+                <outlet property="listView" destination="0dt-wC-b0w" id="ZYQ-nF-AO2"/>
+                <outlet property="searchBar" destination="ruF-SZ-Qvf" id="1X8-9F-zbN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="542" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="输入商品标题或订单号进行搜索" translatesAutoresizingMaskIntoConstraints="NO" id="ruF-SZ-Qvf">
+                    <rect key="frame" x="22" y="74" width="300" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="cpe-lE-OYy"/>
+                        <constraint firstAttribute="height" constant="35" id="pKJ-ZB-pjH"/>
+                    </constraints>
+                    <color key="tintColor" white="0.95204613100000002" alpha="1" colorSpace="calibratedWhite"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQl-2g-F26">
+                    <rect key="frame" x="406" y="74" width="100" height="35"/>
+                    <color key="backgroundColor" red="0.37483698129999998" green="0.80065721270000001" blue="0.46500414610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="Qlx-Ik-Stw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="结算中心">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="calculate:" destination="-1" eventType="touchUpInside" id="c8k-TA-ABN"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9O-TV-EgK">
+                    <rect key="frame" x="22" y="119" width="500" height="1"/>
+                    <color key="backgroundColor" white="0.95204613100000002" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="TSu-Ef-il4"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="0dt-wC-b0w">
+                    <rect key="frame" x="0.0" y="120" width="542" height="547"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="CEj-8u-sLN"/>
+                        <outlet property="delegate" destination="-1" id="9EP-AP-Uax"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.95204613100000002" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LQl-2g-F26" secondAttribute="trailing" constant="36" id="Dkb-dV-8zv"/>
+                <constraint firstItem="0dt-wC-b0w" firstAttribute="top" secondItem="x9O-TV-EgK" secondAttribute="bottom" id="Iym-Uf-I8F"/>
+                <constraint firstItem="x9O-TV-EgK" firstAttribute="top" secondItem="ruF-SZ-Qvf" secondAttribute="bottom" constant="10" id="Mxq-Bq-dHg"/>
+                <constraint firstItem="LQl-2g-F26" firstAttribute="height" secondItem="ruF-SZ-Qvf" secondAttribute="height" id="QXy-NV-EIl"/>
+                <constraint firstItem="0dt-wC-b0w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SVT-zk-fga"/>
+                <constraint firstAttribute="trailing" secondItem="x9O-TV-EgK" secondAttribute="trailing" constant="20" id="X91-5H-o5M"/>
+                <constraint firstAttribute="trailing" secondItem="0dt-wC-b0w" secondAttribute="trailing" id="c26-eC-lUj"/>
+                <constraint firstItem="ruF-SZ-Qvf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="74" id="fYS-gM-Uob"/>
+                <constraint firstItem="LQl-2g-F26" firstAttribute="centerY" secondItem="ruF-SZ-Qvf" secondAttribute="centerY" id="qr3-GW-m0G"/>
+                <constraint firstAttribute="bottom" secondItem="0dt-wC-b0w" secondAttribute="bottom" id="rpr-Pa-TDI"/>
+                <constraint firstItem="x9O-TV-EgK" firstAttribute="leading" secondItem="ruF-SZ-Qvf" secondAttribute="leading" id="sXA-MC-VXu"/>
+                <constraint firstItem="ruF-SZ-Qvf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="wVQ-3E-970"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-442" y="-334"/>
+        </view>
+    </objects>
+</document>

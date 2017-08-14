@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DFCPlayControlView">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNF-Ib-BXd">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="jJQ-0D-MvJ"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                    <state key="normal" image="Board_Play"/>
+                    <state key="selected" image="Board_Stop"/>
+                    <connections>
+                        <action selector="playAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="SJ3-d4-JZm"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTX-WP-Hjt">
+                    <rect key="frame" x="50" y="18" width="51" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14.5" id="AYK-sM-Cy8"/>
+                        <constraint firstAttribute="width" constant="51" id="Ccw-N9-Zar"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="9El-tb-W5W">
+                    <rect key="frame" x="99" y="10" width="302" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Sbc-Da-IrL"/>
+                    </constraints>
+                    <connections>
+                        <action selector="playTimeValueChanged:" destination="iN0-l3-epB" eventType="valueChanged" id="cfh-Pg-ffN"/>
+                    </connections>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pTe-wL-mVz">
+                    <rect key="frame" x="450" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="73t-TJ-78p"/>
+                    </constraints>
+                    <state key="normal" image="FullScreen"/>
+                    <state key="selected" image="SmallScreen"/>
+                    <connections>
+                        <action selector="fullScreen:" destination="iN0-l3-epB" eventType="touchUpInside" id="7nZ-89-7xM"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RmS-Lf-xiM">
+                    <rect key="frame" x="399" y="18" width="51" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="51" id="FvU-o3-6zM"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="14.5" id="OEi-LC-WlE"/>
+                        <constraint firstAttribute="height" constant="14.5" id="TRI-OS-D77"/>
+                        <constraint firstAttribute="width" constant="51" id="X4F-OX-vrk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RmS-Lf-xiM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="GB0-c6-grX"/>
+                <constraint firstItem="pTe-wL-mVz" firstAttribute="leading" secondItem="RmS-Lf-xiM" secondAttribute="trailing" id="Gu5-85-QNb"/>
+                <constraint firstItem="lTX-WP-Hjt" firstAttribute="leading" secondItem="eNF-Ib-BXd" secondAttribute="trailing" id="KPM-bJ-SFq"/>
+                <constraint firstItem="lTX-WP-Hjt" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="UVJ-OD-jRz"/>
+                <constraint firstItem="9El-tb-W5W" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Ug8-pB-Zgw"/>
+                <constraint firstItem="pTe-wL-mVz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UgR-co-X5P"/>
+                <constraint firstAttribute="bottom" secondItem="eNF-Ib-BXd" secondAttribute="bottom" id="UwX-TF-ffM"/>
+                <constraint firstItem="eNF-Ib-BXd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VU8-nR-5uM"/>
+                <constraint firstItem="eNF-Ib-BXd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fMb-hI-KYP"/>
+                <constraint firstAttribute="bottom" secondItem="pTe-wL-mVz" secondAttribute="bottom" id="gvn-x6-e7H"/>
+                <constraint firstItem="RmS-Lf-xiM" firstAttribute="leading" secondItem="9El-tb-W5W" secondAttribute="trailing" id="hc4-hK-vUg"/>
+                <constraint firstItem="9El-tb-W5W" firstAttribute="leading" secondItem="lTX-WP-Hjt" secondAttribute="trailing" id="kVw-Ec-U9Y"/>
+                <constraint firstAttribute="trailing" secondItem="pTe-wL-mVz" secondAttribute="trailing" id="l39-5M-ENv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="fullScreenButton" destination="pTe-wL-mVz" id="5UK-ca-QWO"/>
+                <outlet property="playButton" destination="eNF-Ib-BXd" id="DZw-u2-13g"/>
+                <outlet property="playSlider" destination="9El-tb-W5W" id="yBZ-Yf-b36"/>
+                <outlet property="playTimeLabel" destination="lTX-WP-Hjt" id="7Bh-lY-Y8j"/>
+                <outlet property="totalTimeLabel" destination="RmS-Lf-xiM" id="RY1-M5-yex"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Board_Play" width="27" height="27"/>
+        <image name="Board_Stop" width="28" height="28"/>
+        <image name="FullScreen" width="17" height="17"/>
+        <image name="SmallScreen" width="17" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="studentCell" id="gTV-IL-0wX" customClass="DFCStudentListCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Board_Icon" translatesAutoresizingMaskIntoConstraints="NO" id="UfW-o8-KWa">
+                        <rect key="frame" x="15" y="5" width="40" height="40"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Rp4-wV-4M4"/>
+                            <constraint firstAttribute="height" constant="40" id="Yei-2W-7tu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学生姓名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fw3-xD-UGa">
+                        <rect key="frame" x="0.0" y="48" width="70" height="19"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXZ-gl-PEO">
+                        <rect key="frame" x="50" y="5" width="15" height="15"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.22352941179999999" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="KbU-GN-fQR"/>
+                            <constraint firstAttribute="width" constant="15" id="lQ5-vy-4tj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Fw3-xD-UGa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4VU-NW-HQc"/>
+                <constraint firstAttribute="trailing" secondItem="wXZ-gl-PEO" secondAttribute="trailing" constant="5" id="Nvx-ls-3CB"/>
+                <constraint firstItem="UfW-o8-KWa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Oj2-zM-Ho1"/>
+                <constraint firstAttribute="bottom" secondItem="Fw3-xD-UGa" secondAttribute="bottom" constant="3" id="Yhv-MF-IdP"/>
+                <constraint firstItem="wXZ-gl-PEO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="biY-TB-tGf"/>
+                <constraint firstItem="UfW-o8-KWa" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="bla-FJ-ALU"/>
+                <constraint firstItem="Fw3-xD-UGa" firstAttribute="top" secondItem="UfW-o8-KWa" secondAttribute="bottom" constant="3" id="oay-41-DgV"/>
+                <constraint firstAttribute="trailing" secondItem="Fw3-xD-UGa" secondAttribute="trailing" id="xVP-gr-kSS"/>
+            </constraints>
+            <connections>
+                <outlet property="tipLabel" destination="wXZ-gl-PEO" id="NTH-Ts-jd4"/>
+                <outlet property="titleImageView" destination="UfW-o8-KWa" id="dSL-W1-b3i"/>
+                <outlet property="titleLabel" destination="Fw3-xD-UGa" id="Nuv-is-xCp"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Board_Icon" width="42" height="42"/>
+    </resources>
+</document>

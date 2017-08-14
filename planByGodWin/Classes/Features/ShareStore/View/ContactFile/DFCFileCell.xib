@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DFCFileCell">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKB-xM-o2g">
+                        <rect key="frame" x="5" y="5" width="170" height="110"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DFC_video" translatesAutoresizingMaskIntoConstraints="NO" id="fUq-lD-aAx">
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="110"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fUq-lD-aAx" firstAttribute="top" secondItem="IKB-xM-o2g" secondAttribute="top" id="DuT-Ju-gKb"/>
+                            <constraint firstAttribute="trailing" secondItem="fUq-lD-aAx" secondAttribute="trailing" id="UZs-79-Iaw"/>
+                            <constraint firstAttribute="bottom" secondItem="fUq-lD-aAx" secondAttribute="bottom" id="fwi-Yi-1Cx"/>
+                            <constraint firstAttribute="height" constant="110" id="hUH-bN-Cph"/>
+                            <constraint firstItem="fUq-lD-aAx" firstAttribute="leading" secondItem="IKB-xM-o2g" secondAttribute="leading" id="lKU-5w-1fF"/>
+                        </constraints>
+                    </view>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfV-Ig-wB3">
+                        <rect key="frame" x="158" y="2" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="b8A-LK-tjp"/>
+                            <constraint firstAttribute="width" constant="20" id="mpU-tA-v5f"/>
+                        </constraints>
+                        <state key="normal" image="Delete"/>
+                        <connections>
+                            <action selector="delete:" destination="gTV-IL-0wX" eventType="touchUpInside" id="bZa-HG-Csn"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="八戒日记.txt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXe-jG-qE1">
+                        <rect key="frame" x="51" y="115" width="78" height="35"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="IKB-xM-o2g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="2AM-mZ-51i"/>
+                <constraint firstAttribute="trailing" secondItem="IKB-xM-o2g" secondAttribute="trailing" constant="5" id="EeG-Bo-bx3"/>
+                <constraint firstItem="xXe-jG-qE1" firstAttribute="centerX" secondItem="IKB-xM-o2g" secondAttribute="centerX" id="HfA-Ws-hOv"/>
+                <constraint firstItem="IKB-xM-o2g" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="ONq-Ku-c2u"/>
+                <constraint firstItem="xXe-jG-qE1" firstAttribute="top" secondItem="IKB-xM-o2g" secondAttribute="bottom" id="Olb-64-I5j"/>
+                <constraint firstItem="vfV-Ig-wB3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="Sey-dO-jAs"/>
+                <constraint firstAttribute="bottom" secondItem="xXe-jG-qE1" secondAttribute="bottom" id="hb0-mE-Dja"/>
+                <constraint firstAttribute="trailing" secondItem="vfV-Ig-wB3" secondAttribute="trailing" constant="2" id="mjj-fs-u0x"/>
+            </constraints>
+            <size key="customSize" width="180" height="133"/>
+            <connections>
+                <outlet property="containerView" destination="IKB-xM-o2g" id="Xt5-1M-ZuE"/>
+                <outlet property="deleteBtn" destination="vfV-Ig-wB3" id="ahb-ve-kZy"/>
+                <outlet property="fileTypeImgView" destination="fUq-lD-aAx" id="7IX-8R-x9W"/>
+                <outlet property="titleLabel" destination="xXe-jG-qE1" id="fwb-OF-vRS"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="-133"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="DFC_video" width="170" height="110"/>
+        <image name="Delete" width="60" height="60"/>
+    </resources>
+</document>

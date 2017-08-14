@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DFCVideoCell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DFC_video" translatesAutoresizingMaskIntoConstraints="NO" id="4Vg-y4-nqz">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="155"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雪山飞狐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHH-VU-n5m">
+                        <rect key="frame" x="0.0" y="155" width="200" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="vhG-U7-rMc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2S-K2-wDP">
+                        <rect key="frame" x="159.5" y="138" width="35.5" height="17"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fHH-VU-n5m" secondAttribute="bottom" id="EkP-HA-tl3"/>
+                <constraint firstItem="4Vg-y4-nqz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="O5o-eW-CEo"/>
+                <constraint firstAttribute="trailing" secondItem="q2S-K2-wDP" secondAttribute="trailing" constant="5" id="QzB-NP-7m4"/>
+                <constraint firstItem="4Vg-y4-nqz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VFt-OZ-eAA"/>
+                <constraint firstAttribute="trailing" secondItem="fHH-VU-n5m" secondAttribute="trailing" id="Vbt-3W-hEo"/>
+                <constraint firstItem="fHH-VU-n5m" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cRL-EW-WSi"/>
+                <constraint firstAttribute="trailing" secondItem="4Vg-y4-nqz" secondAttribute="trailing" id="gTk-Yj-3O2"/>
+                <constraint firstItem="q2S-K2-wDP" firstAttribute="bottom" secondItem="4Vg-y4-nqz" secondAttribute="bottom" id="saG-Ic-tTo"/>
+                <constraint firstItem="fHH-VU-n5m" firstAttribute="top" secondItem="4Vg-y4-nqz" secondAttribute="bottom" id="zK7-om-LrJ"/>
+            </constraints>
+            <size key="customSize" width="184" height="91"/>
+            <connections>
+                <outlet property="durationLabel" destination="q2S-K2-wDP" id="d3U-Ox-jfo"/>
+                <outlet property="frameImageView" destination="4Vg-y4-nqz" id="TqY-Rc-yT3"/>
+                <outlet property="nameLabel" destination="fHH-VU-n5m" id="jA3-Rj-PS6"/>
+            </connections>
+            <point key="canvasLocation" x="95" y="-75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="DFC_video" width="85" height="55"/>
+    </resources>
+</document>

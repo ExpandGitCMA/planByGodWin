@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrderPayAlipayView">
+            <rect key="frame" x="0.0" y="0.0" width="700" height="450"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payBackground" translatesAutoresizingMaskIntoConstraints="NO" id="HLc-EK-UJ0">
+                    <rect key="frame" x="50" y="80" width="300" height="290"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="290" id="FdS-hY-UdA"/>
+                        <constraint firstAttribute="width" constant="300" id="jYs-1Q-F9k"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orderAlipay" translatesAutoresizingMaskIntoConstraints="NO" id="Pcp-6r-4oS">
+                    <rect key="frame" x="88" y="120" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="I23-Yd-ary"/>
+                        <constraint firstAttribute="width" constant="60" id="y9s-DD-W7T"/>
+                    </constraints>
+                </imageView>
+                <imageView contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bWl-z8-YpI">
+                    <rect key="frame" x="400" y="90" width="200" height="200"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="1de-i7-ePW"/>
+                        <constraint firstAttribute="height" constant="200" id="S4q-BK-8L0"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请使用支付宝扫描 二维码完成支付(15分钟内有效)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKM-Lj-0Cg">
+                    <rect key="frame" x="455" y="310" width="145" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="wCG-Bq-tgg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.30976641179999997" green="0.30982545020000002" blue="0.30976271630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="payBarCode" translatesAutoresizingMaskIntoConstraints="NO" id="VF9-kG-lIO">
+                    <rect key="frame" x="400" y="310" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="bRy-Aw-qxC"/>
+                        <constraint firstAttribute="height" constant="40" id="yXd-zN-fKV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝支付" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLK-QS-70I">
+                    <rect key="frame" x="188" y="140" width="93" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="EYC-oa-led"/>
+                        <constraint firstAttribute="width" constant="93" id="GHD-cd-nrb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="创建时间: 2017-03-31 17:53" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PpZ-Ul-t81">
+                    <rect key="frame" x="95" y="284" width="210" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6QQ-mj-gRm"/>
+                        <constraint firstAttribute="width" constant="210" id="GoP-jO-oyi"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.30976641179999997" green="0.30982545020000002" blue="0.30976271630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="应付金额 ¥10.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhL-8H-7OE">
+                    <rect key="frame" x="90" y="210.5" width="220" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="AR7-fp-CuD"/>
+                        <constraint firstAttribute="width" constant="220" id="MBu-1s-dE9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" red="0.93017303943634033" green="0.4455636739730835" blue="0.31296312808990479" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94499540328979492" green="0.94515722990036011" blue="0.94498521089553833" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MKM-Lj-0Cg" firstAttribute="top" secondItem="bWl-z8-YpI" secondAttribute="bottom" constant="20" id="5RP-hc-2RB"/>
+                <constraint firstItem="PpZ-Ul-t81" firstAttribute="centerX" secondItem="HLc-EK-UJ0" secondAttribute="centerX" id="81D-V9-mjr"/>
+                <constraint firstItem="MKM-Lj-0Cg" firstAttribute="leading" secondItem="VF9-kG-lIO" secondAttribute="trailing" constant="15" id="9WJ-I5-sX9"/>
+                <constraint firstItem="Pcp-6r-4oS" firstAttribute="top" secondItem="HLc-EK-UJ0" secondAttribute="top" constant="40" id="J6h-5H-E4u"/>
+                <constraint firstItem="bWl-z8-YpI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="90" id="NQx-Xh-9nX"/>
+                <constraint firstItem="Pcp-6r-4oS" firstAttribute="leading" secondItem="HLc-EK-UJ0" secondAttribute="leading" constant="38" id="S46-nC-fIe"/>
+                <constraint firstItem="ZhL-8H-7OE" firstAttribute="centerY" secondItem="HLc-EK-UJ0" secondAttribute="centerY" id="TF6-hh-a5e"/>
+                <constraint firstItem="HLc-EK-UJ0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="80" id="W24-Ge-p4D"/>
+                <constraint firstItem="VF9-kG-lIO" firstAttribute="leading" secondItem="bWl-z8-YpI" secondAttribute="leading" id="XMf-Rv-rpE"/>
+                <constraint firstItem="mLK-QS-70I" firstAttribute="leading" secondItem="Pcp-6r-4oS" secondAttribute="leading" constant="100" id="Y5g-Me-ycy"/>
+                <constraint firstItem="HLc-EK-UJ0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="bsg-FY-3E5"/>
+                <constraint firstItem="PpZ-Ul-t81" firstAttribute="bottom" secondItem="HLc-EK-UJ0" secondAttribute="bottom" constant="-65" id="eex-f0-58m"/>
+                <constraint firstItem="mLK-QS-70I" firstAttribute="top" secondItem="HLc-EK-UJ0" secondAttribute="top" constant="60" id="luS-qn-xxj"/>
+                <constraint firstItem="MKM-Lj-0Cg" firstAttribute="trailing" secondItem="bWl-z8-YpI" secondAttribute="trailing" id="nuv-5A-FUP"/>
+                <constraint firstItem="ZhL-8H-7OE" firstAttribute="centerX" secondItem="HLc-EK-UJ0" secondAttribute="centerX" id="oi1-2k-BIq"/>
+                <constraint firstItem="bWl-z8-YpI" firstAttribute="leading" secondItem="HLc-EK-UJ0" secondAttribute="trailing" constant="50" id="qb0-tM-jWM"/>
+                <constraint firstItem="VF9-kG-lIO" firstAttribute="top" secondItem="bWl-z8-YpI" secondAttribute="bottom" constant="20" id="zJk-qL-Y7g"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="payCode" destination="bWl-z8-YpI" id="TQc-lX-t8t"/>
+                <outlet property="payCodeName" destination="MKM-Lj-0Cg" id="YxT-ZR-fLq"/>
+                <outlet property="payImgUrl" destination="Pcp-6r-4oS" id="Z9G-GH-E7R"/>
+                <outlet property="payName" destination="mLK-QS-70I" id="fMr-e1-gUO"/>
+                <outlet property="price" destination="ZhL-8H-7OE" id="G1c-Kl-irl"/>
+                <outlet property="timer" destination="PpZ-Ul-t81" id="DBu-G2-J2g"/>
+            </connections>
+            <point key="canvasLocation" x="-148" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="orderAlipay" width="60" height="59"/>
+        <image name="payBackground" width="298" height="285"/>
+        <image name="payBarCode" width="39" height="39"/>
+    </resources>
+</document>

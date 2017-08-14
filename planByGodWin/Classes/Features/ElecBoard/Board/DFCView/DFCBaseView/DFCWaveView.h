@@ -1,0 +1,15 @@
+//
+//  DFCWaveView.h
+//  planByGodWin
+//
+//  Created by DaFenQi on 2017/5/17.
+//  Copyright © 2017年 DFC. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface DFCWaveView : UIView
+
+- (void) addAveragePoint:(CGFloat)averagePoint andPeakPoint:(CGFloat)peakPoint;
+
+@end

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="269" id="KGk-i7-Jjw" customClass="DFCCoursewareInfoYHCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="259.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="文件名（20字以内）" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oOS-s4-wKW">
+                        <rect key="frame" x="10" y="15" width="300" height="30"/>
+                        <color key="backgroundColor" white="0.95147879464285712" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="kX9-B9-Q2K"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="11" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oGa-BS-mBh" customClass="DFCTextView">
+                        <rect key="frame" x="10" y="60" width="300" height="91.5"/>
+                        <color key="backgroundColor" white="0.94776785714285716" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xV0-3v-aQX">
+                        <rect key="frame" x="10" y="166.5" width="300" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="5JY-9r-mSR"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hq1-jv-cfo">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="xV0-3v-aQX" secondAttribute="bottom" constant="5" id="6yv-92-Cpc"/>
+                    <constraint firstItem="oOS-s4-wKW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="PHo-79-aF8"/>
+                    <constraint firstItem="xV0-3v-aQX" firstAttribute="leading" secondItem="oOS-s4-wKW" secondAttribute="leading" id="Q6J-3h-Brl"/>
+                    <constraint firstItem="oGa-BS-mBh" firstAttribute="trailing" secondItem="oOS-s4-wKW" secondAttribute="trailing" id="Xy7-0f-huk"/>
+                    <constraint firstItem="oGa-BS-mBh" firstAttribute="top" secondItem="oOS-s4-wKW" secondAttribute="bottom" constant="15" id="Z91-9t-IVP"/>
+                    <constraint firstAttribute="trailing" secondItem="oOS-s4-wKW" secondAttribute="trailing" constant="10" id="dBV-g4-Gmk"/>
+                    <constraint firstItem="xV0-3v-aQX" firstAttribute="trailing" secondItem="oOS-s4-wKW" secondAttribute="trailing" id="ktj-ml-k2C"/>
+                    <constraint firstItem="oGa-BS-mBh" firstAttribute="leading" secondItem="oOS-s4-wKW" secondAttribute="leading" id="swq-e7-wBP"/>
+                    <constraint firstItem="oOS-s4-wKW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="u4O-CD-qnB"/>
+                    <constraint firstItem="xV0-3v-aQX" firstAttribute="top" secondItem="oGa-BS-mBh" secondAttribute="bottom" constant="15" id="xr0-2w-Asi"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="coursewareDescribeTextView" destination="oGa-BS-mBh" id="eTH-Qz-86e"/>
+                <outlet property="coursewareTitleTextField" destination="oOS-s4-wKW" id="BMa-xB-KMk"/>
+                <outlet property="coverCollectionView" destination="xV0-3v-aQX" id="M0B-vt-Xdg"/>
+            </connections>
+            <point key="canvasLocation" x="-954" y="-41"/>
+        </tableViewCell>
+    </objects>
+</document>

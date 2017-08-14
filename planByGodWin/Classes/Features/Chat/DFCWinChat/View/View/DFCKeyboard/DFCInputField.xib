@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DFCInputField">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="249"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOK-qU-cpo">
+                    <rect key="frame" x="15" y="7.5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="kn1-TT-BA6"/>
+                        <constraint firstAttribute="width" constant="35" id="ohH-kW-V6f"/>
+                    </constraints>
+                    <state key="normal" image="chat_bottom_voice_nor"/>
+                    <connections>
+                        <action selector="voice:" destination="iN0-l3-epB" eventType="touchUpInside" id="ywf-g9-YuF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljP-XJ-yKY">
+                    <rect key="frame" x="430" y="7.5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="KHO-tZ-TVp"/>
+                        <constraint firstAttribute="width" constant="35" id="sqs-al-rb8"/>
+                    </constraints>
+                    <state key="normal" image="chat_bottom_up_nor"/>
+                    <connections>
+                        <action selector="more:" destination="iN0-l3-epB" eventType="touchUpInside" id="Xbq-mk-Wox"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPy-C9-HfV">
+                    <rect key="frame" x="385" y="7.5" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="bnD-ur-YsV"/>
+                        <constraint firstAttribute="width" constant="35" id="f67-nn-Feu"/>
+                    </constraints>
+                    <state key="normal" image="chat_bottom_smile_nor"/>
+                    <connections>
+                        <action selector="emoji:" destination="iN0-l3-epB" eventType="touchUpInside" id="sOL-gY-YA7"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="justified" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="diR-dc-YPa">
+                    <rect key="frame" x="65" y="10" width="305" height="30"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="UnO-x4-jBd"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ljP-XJ-yKY" firstAttribute="leading" secondItem="JPy-C9-HfV" secondAttribute="trailing" constant="10" id="H3R-Uu-BpZ"/>
+                <constraint firstItem="diR-dc-YPa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="R3o-oK-Mus"/>
+                <constraint firstItem="eOK-qU-cpo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7.5" id="Wcf-h0-7kN"/>
+                <constraint firstItem="ljP-XJ-yKY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7.5" id="X21-lk-SHm"/>
+                <constraint firstItem="eOK-qU-cpo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Z3z-Wv-18Q"/>
+                <constraint firstItem="JPy-C9-HfV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7.5" id="jFD-y3-Egs"/>
+                <constraint firstItem="JPy-C9-HfV" firstAttribute="leading" secondItem="diR-dc-YPa" secondAttribute="trailing" constant="15" id="log-Dn-SDS"/>
+                <constraint firstItem="diR-dc-YPa" firstAttribute="leading" secondItem="eOK-qU-cpo" secondAttribute="trailing" constant="15" id="neT-iq-wGw"/>
+                <constraint firstAttribute="trailing" secondItem="ljP-XJ-yKY" secondAttribute="trailing" constant="15" id="t7k-hw-Ibj"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="emoji" destination="JPy-C9-HfV" id="ucm-36-TQK"/>
+                <outlet property="inputField" destination="diR-dc-YPa" id="WsJ-iN-81H"/>
+                <outlet property="more" destination="ljP-XJ-yKY" id="NPA-GO-hBa"/>
+                <outlet property="voice" destination="eOK-qU-cpo" id="GlK-Bl-MZV"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chat_bottom_smile_nor" width="28" height="28"/>
+        <image name="chat_bottom_up_nor" width="26" height="26"/>
+        <image name="chat_bottom_voice_nor" width="21" height="21"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DFCVolumnCtrlView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Board_Play_Background" translatesAutoresizingMaskIntoConstraints="NO" id="QFL-RG-1Xv">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="32"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Board_Volumn_Min" translatesAutoresizingMaskIntoConstraints="NO" id="yIC-7q-NKN">
+                    <rect key="frame" x="6" y="3" width="26" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="26" id="U0g-GT-TaG"/>
+                        <constraint firstAttribute="height" constant="26" id="fDa-M7-FJF"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Board_Volumn_Max" translatesAutoresizingMaskIntoConstraints="NO" id="LiN-ec-FEJ">
+                    <rect key="frame" x="168" y="3.5" width="26" height="26"/>
+                </imageView>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="q2J-gp-cM3">
+                    <rect key="frame" x="36" y="3" width="128" height="27"/>
+                    <connections>
+                        <action selector="changeVolumn:" destination="iN0-l3-epB" eventType="valueChanged" id="Kf6-07-Mue"/>
+                    </connections>
+                </slider>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LiN-ec-FEJ" firstAttribute="leading" secondItem="q2J-gp-cM3" secondAttribute="trailing" constant="6" id="DZ9-ch-urf"/>
+                <constraint firstAttribute="bottom" secondItem="QFL-RG-1Xv" secondAttribute="bottom" id="MoI-CZ-894"/>
+                <constraint firstItem="QFL-RG-1Xv" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O6T-y5-Y3b"/>
+                <constraint firstItem="LiN-ec-FEJ" firstAttribute="height" secondItem="yIC-7q-NKN" secondAttribute="height" id="PTj-AI-cx6"/>
+                <constraint firstItem="q2J-gp-cM3" firstAttribute="height" secondItem="yIC-7q-NKN" secondAttribute="height" id="Vf4-kT-LNV"/>
+                <constraint firstItem="q2J-gp-cM3" firstAttribute="centerY" secondItem="yIC-7q-NKN" secondAttribute="centerY" id="XB1-HB-OwL"/>
+                <constraint firstItem="yIC-7q-NKN" firstAttribute="centerY" secondItem="QFL-RG-1Xv" secondAttribute="centerY" id="Xos-AV-YqO"/>
+                <constraint firstItem="QFL-RG-1Xv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Y0Z-Vf-dJ4"/>
+                <constraint firstItem="LiN-ec-FEJ" firstAttribute="width" secondItem="yIC-7q-NKN" secondAttribute="width" id="Zfi-5r-gjl"/>
+                <constraint firstItem="yIC-7q-NKN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="6" id="gVV-WG-O6q"/>
+                <constraint firstItem="q2J-gp-cM3" firstAttribute="leading" secondItem="yIC-7q-NKN" secondAttribute="trailing" constant="6" id="hSz-96-7Ch"/>
+                <constraint firstAttribute="trailing" secondItem="QFL-RG-1Xv" secondAttribute="trailing" id="lfc-dF-QCZ"/>
+                <constraint firstItem="LiN-ec-FEJ" firstAttribute="centerY" secondItem="yIC-7q-NKN" secondAttribute="centerY" id="sIV-wZ-0nM"/>
+                <constraint firstAttribute="trailing" secondItem="LiN-ec-FEJ" secondAttribute="trailing" constant="6" id="yFS-cu-5HN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="volumnSlider" destination="q2J-gp-cM3" id="CRX-pc-GQy"/>
+            </connections>
+            <point key="canvasLocation" x="-207.5" y="-305"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Board_Play_Background" width="585" height="59"/>
+        <image name="Board_Volumn_Max" width="29" height="29"/>
+        <image name="Board_Volumn_Min" width="28" height="28"/>
+    </resources>
+</document>

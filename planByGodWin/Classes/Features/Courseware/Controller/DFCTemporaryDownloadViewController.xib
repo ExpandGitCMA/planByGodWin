@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DFCTemporaryDownloadViewController">
+            <connections>
+                <outlet property="progressView" destination="dtD-OR-RnU" id="Uue-kj-MNt"/>
+                <outlet property="rateLabel" destination="Iiu-Qk-hIL" id="B9d-eu-IeY"/>
+                <outlet property="speedLabel" destination="Cr5-2l-TBw" id="7iN-DG-p4d"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="courseware_temporaryDownload" translatesAutoresizingMaskIntoConstraints="NO" id="6kX-4x-FEL">
+                    <rect key="frame" x="312" y="160" width="400" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="400" id="bhD-oP-7LR"/>
+                        <constraint firstAttribute="height" constant="250" id="fA6-Bu-RT0"/>
+                    </constraints>
+                </imageView>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="dtD-OR-RnU">
+                    <rect key="frame" x="312" y="460" width="400" height="2"/>
+                </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已开始上课，请耐心等待课件下载完成" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sf-0m-sQj">
+                    <rect key="frame" x="312" y="111" width="400" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Cda-pT-oQf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="下载中..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iiu-Qk-hIL">
+                    <rect key="frame" x="312" y="492" width="400" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="pbS-Co-11u"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr5-2l-TBw">
+                    <rect key="frame" x="312" y="530" width="400" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6kX-4x-FEL" firstAttribute="top" secondItem="6sf-0m-sQj" secondAttribute="bottom" constant="28" id="4pF-Yg-QPQ"/>
+                <constraint firstItem="dtD-OR-RnU" firstAttribute="top" secondItem="6kX-4x-FEL" secondAttribute="bottom" constant="50" id="8Dv-ol-2HN"/>
+                <constraint firstItem="Cr5-2l-TBw" firstAttribute="height" secondItem="Iiu-Qk-hIL" secondAttribute="height" id="8gZ-rL-esC"/>
+                <constraint firstItem="Iiu-Qk-hIL" firstAttribute="trailing" secondItem="dtD-OR-RnU" secondAttribute="trailing" id="GRZ-wP-QEt"/>
+                <constraint firstItem="Iiu-Qk-hIL" firstAttribute="leading" secondItem="dtD-OR-RnU" secondAttribute="leading" id="PI5-uE-bO6"/>
+                <constraint firstItem="6kX-4x-FEL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q9K-RF-OUl"/>
+                <constraint firstItem="dtD-OR-RnU" firstAttribute="trailing" secondItem="6kX-4x-FEL" secondAttribute="trailing" id="Qse-l6-bRO"/>
+                <constraint firstItem="Iiu-Qk-hIL" firstAttribute="top" secondItem="dtD-OR-RnU" secondAttribute="bottom" constant="30" id="UOa-lk-09Q"/>
+                <constraint firstItem="Cr5-2l-TBw" firstAttribute="trailing" secondItem="Iiu-Qk-hIL" secondAttribute="trailing" id="USx-sY-Qgc"/>
+                <constraint firstItem="6sf-0m-sQj" firstAttribute="trailing" secondItem="6kX-4x-FEL" secondAttribute="trailing" id="aLs-Rs-YeS"/>
+                <constraint firstItem="dtD-OR-RnU" firstAttribute="leading" secondItem="6kX-4x-FEL" secondAttribute="leading" id="cPf-Qj-BzO"/>
+                <constraint firstItem="6kX-4x-FEL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="160" id="hf3-WT-v05"/>
+                <constraint firstItem="Cr5-2l-TBw" firstAttribute="top" secondItem="Iiu-Qk-hIL" secondAttribute="bottom" constant="17" id="iUa-y4-X3c"/>
+                <constraint firstItem="6sf-0m-sQj" firstAttribute="leading" secondItem="6kX-4x-FEL" secondAttribute="leading" id="wQ5-tO-Awp"/>
+                <constraint firstItem="Cr5-2l-TBw" firstAttribute="leading" secondItem="Iiu-Qk-hIL" secondAttribute="leading" id="zNg-BB-Uiv"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="courseware_temporaryDownload" width="402" height="251"/>
+    </resources>
+</document>

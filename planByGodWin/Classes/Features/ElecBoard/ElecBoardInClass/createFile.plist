@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>titel</key>
+		<string>空白页新建</string>
+		<key>url</key>
+		<string>board_white</string>
+	</dict>
+	<dict>
+		<key>titel</key>
+		<string>从模版中新建</string>
+		<key>url</key>
+		<string>board_paste</string>
+	</dict>
+</array>
+</plist>

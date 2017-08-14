@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E33120FCFB712EE4DF5FB101701281366457CA5E+++A096CD5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E33120FCFB712EE4DF5FB101701281366457CA5E+++19A2C60" : 9223372036854775807,
+    "E33120FCFB712EE4DF5FB101701281366457CA5E+++AFB07C3" : 9223372036854775807,
+    "E33120FCFB712EE4DF5FB101701281366457CA5E+++A096CD5" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F31FD2BA-445A-4D6D-8DED-9F84D02985A1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E33120FCFB712EE4DF5FB101701281366457CA5E+++19A2C60" : "",
+    "E33120FCFB712EE4DF5FB101701281366457CA5E+++AFB07C3" : "",
+    "E33120FCFB712EE4DF5FB101701281366457CA5E+++A096CD5" : "DEWEducation\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "planByGodWin",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "planByGodWin.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/coding.net\/u\/RickHe\/p\/DEWEducation",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E33120FCFB712EE4DF5FB101701281366457CA5E+++19A2C60"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/coding.net\/u\/RickHe\/p\/DEWEducation",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E33120FCFB712EE4DF5FB101701281366457CA5E+++A096CD5"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/coding.net\/u\/RickHe\/p\/DEWEducation",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E33120FCFB712EE4DF5FB101701281366457CA5E+++AFB07C3"
+    }
+  ]
+}

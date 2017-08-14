@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DFCEditToolView">
+            <rect key="frame" x="0.0" y="0.0" width="44" height="264"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rhh-GN-1Uh">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="C5e-0A-zq3"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="Board_Hand_U"/>
+                    <state key="selected" image="Board_Hand_S"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Aum-Sx-Fmp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8A-qz-ea8">
+                    <rect key="frame" x="0.0" y="44" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="udQ-mP-wD2"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="Board_Edit_U"/>
+                    <state key="selected" image="Board_Edit_S"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="j4q-FM-cnY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFg-gh-2Sc">
+                    <rect key="frame" x="0.0" y="88" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ook-Ti-4SD"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="Board_Cut_U"/>
+                    <state key="selected" image="Board_Cut_S"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="KF4-A3-EC1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEH-6U-5CW">
+                    <rect key="frame" x="0.0" y="132" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="GzD-8R-ETi"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="Board_Delete_U"/>
+                    <state key="selected" image="Board_Delete_S"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="4Sy-pV-oEX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGz-uW-8JZ">
+                    <rect key="frame" x="0.0" y="176" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="DIt-6Q-Ps7"/>
+                    </constraints>
+                    <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="Board_Reback_U"/>
+                    <state key="disabled" image="Board_Undo_D">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="Board_Reback_S"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Jy1-uH-uvD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4t4-0B-YrY">
+                    <rect key="frame" x="0.0" y="220" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1AC-B2-G2Q"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                    <state key="normal" image="Board_Clear_U"/>
+                    <state key="selected" image="Board_Clear_S"/>
+                    <connections>
+                        <action selector="buttonAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="HtF-qf-d2K"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4t4-0B-YrY" secondAttribute="trailing" id="HZZ-e0-5e6"/>
+                <constraint firstItem="4t4-0B-YrY" firstAttribute="top" secondItem="UGz-uW-8JZ" secondAttribute="bottom" id="Lcj-DS-MUb"/>
+                <constraint firstItem="jEH-6U-5CW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="O1t-Li-cM9"/>
+                <constraint firstItem="4t4-0B-YrY" firstAttribute="top" secondItem="UGz-uW-8JZ" secondAttribute="bottom" id="PN6-43-zne"/>
+                <constraint firstItem="x8A-qz-ea8" firstAttribute="top" secondItem="Rhh-GN-1Uh" secondAttribute="bottom" id="Pde-1f-jdk"/>
+                <constraint firstItem="Rhh-GN-1Uh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="RHW-jY-PYt"/>
+                <constraint firstAttribute="trailing" secondItem="Rhh-GN-1Uh" secondAttribute="trailing" id="XEG-3L-06d"/>
+                <constraint firstItem="UGz-uW-8JZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="YvJ-OR-qbX"/>
+                <constraint firstItem="lFg-gh-2Sc" firstAttribute="top" secondItem="x8A-qz-ea8" secondAttribute="bottom" id="Ywx-ub-9ya"/>
+                <constraint firstItem="x8A-qz-ea8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bvt-8c-AXz"/>
+                <constraint firstAttribute="trailing" secondItem="lFg-gh-2Sc" secondAttribute="trailing" id="bxC-tG-aik"/>
+                <constraint firstItem="lFg-gh-2Sc" firstAttribute="top" secondItem="x8A-qz-ea8" secondAttribute="bottom" id="dWT-iX-6X4"/>
+                <constraint firstItem="jEH-6U-5CW" firstAttribute="top" secondItem="lFg-gh-2Sc" secondAttribute="bottom" id="dhY-WG-bHP"/>
+                <constraint firstItem="4t4-0B-YrY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eLq-c9-gvS"/>
+                <constraint firstItem="Rhh-GN-1Uh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="iSg-IX-ydi"/>
+                <constraint firstItem="jEH-6U-5CW" firstAttribute="top" secondItem="lFg-gh-2Sc" secondAttribute="bottom" id="mWN-iJ-6Du"/>
+                <constraint firstAttribute="trailing" secondItem="x8A-qz-ea8" secondAttribute="trailing" id="n8h-fX-9RD"/>
+                <constraint firstAttribute="trailing" secondItem="UGz-uW-8JZ" secondAttribute="trailing" id="sXw-Ji-nSo"/>
+                <constraint firstItem="UGz-uW-8JZ" firstAttribute="top" secondItem="jEH-6U-5CW" secondAttribute="bottom" id="wh1-h4-YEj"/>
+                <constraint firstAttribute="trailing" secondItem="jEH-6U-5CW" secondAttribute="trailing" id="xuP-OD-V9b"/>
+                <constraint firstItem="lFg-gh-2Sc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yCE-Em-5VM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="editButton" destination="x8A-qz-ea8" id="YVZ-qe-tGS"/>
+                <outlet property="handButton" destination="Rhh-GN-1Uh" id="KjX-aT-93p"/>
+                <outlet property="simpleButton" destination="4t4-0B-YrY" id="c02-ak-Ax3"/>
+                <outlet property="undoButton" destination="UGz-uW-8JZ" id="KI6-b0-cLr"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Board_Clear_S" width="26" height="26"/>
+        <image name="Board_Clear_U" width="26" height="26"/>
+        <image name="Board_Cut_S" width="29" height="29"/>
+        <image name="Board_Cut_U" width="29" height="29"/>
+        <image name="Board_Delete_S" width="27" height="27"/>
+        <image name="Board_Delete_U" width="27" height="27"/>
+        <image name="Board_Edit_S" width="33" height="33"/>
+        <image name="Board_Edit_U" width="33" height="33"/>
+        <image name="Board_Hand_S" width="33" height="33"/>
+        <image name="Board_Hand_U" width="33" height="33"/>
+        <image name="Board_Reback_S" width="33" height="33"/>
+        <image name="Board_Reback_U" width="33" height="33"/>
+        <image name="Board_Undo_D" width="33" height="33"/>
+    </resources>
+</document>

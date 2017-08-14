@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="G9D-87-Nto">
+            <objects>
+                <viewController storyboardIdentifier="login" id="c1d-1R-5PL" customClass="DFCLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2QL-rb-spU"/>
+                        <viewControllerLayoutGuide type="bottom" id="lDD-Ud-L2Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RbP-OG-Qlu">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginByGod" translatesAutoresizingMaskIntoConstraints="NO" id="YJN-4A-UVC">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="答尔问智汇课堂教师版" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edn-nI-9Kh">
+                                <rect key="frame" x="226" y="65" width="215" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="NgX-gT-ZkF"/>
+                                    <constraint firstAttribute="width" constant="215" id="kHy-m3-N6R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B6V-Tg-oh5" customClass="DFCLoginView">
+                                <rect key="frame" x="177" y="0.0" width="490" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="490" id="Axs-DH-QCl"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FM1-3k-MvI">
+                                <rect key="frame" x="22" y="326" width="50" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <state key="normal" title="游客登录">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="visitorLogin:" destination="c1d-1R-5PL" eventType="touchUpInside" id="Tmp-u6-eDo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lDD-Ud-L2Z" firstAttribute="top" secondItem="FM1-3k-MvI" secondAttribute="bottom" constant="22" id="85S-Lg-iwp"/>
+                            <constraint firstAttribute="trailing" secondItem="B6V-Tg-oh5" secondAttribute="trailing" id="EsN-Ex-vMs"/>
+                            <constraint firstItem="lDD-Ud-L2Z" firstAttribute="top" secondItem="B6V-Tg-oh5" secondAttribute="bottom" id="T2y-EC-Iyz"/>
+                            <constraint firstItem="edn-nI-9Kh" firstAttribute="centerX" secondItem="RbP-OG-Qlu" secondAttribute="centerX" id="T5c-qq-zdP"/>
+                            <constraint firstAttribute="trailing" secondItem="YJN-4A-UVC" secondAttribute="trailing" id="UBS-Le-Kyk"/>
+                            <constraint firstItem="YJN-4A-UVC" firstAttribute="leading" secondItem="RbP-OG-Qlu" secondAttribute="leading" id="W1V-JT-Lf1"/>
+                            <constraint firstItem="edn-nI-9Kh" firstAttribute="top" secondItem="RbP-OG-Qlu" secondAttribute="topMargin" constant="65" id="Yjv-bT-ZBW"/>
+                            <constraint firstItem="FM1-3k-MvI" firstAttribute="leading" secondItem="RbP-OG-Qlu" secondAttribute="leading" constant="22" id="jZV-yY-oym"/>
+                            <constraint firstItem="lDD-Ud-L2Z" firstAttribute="top" secondItem="YJN-4A-UVC" secondAttribute="bottom" id="o2z-e4-yAM"/>
+                            <constraint firstItem="B6V-Tg-oh5" firstAttribute="top" secondItem="RbP-OG-Qlu" secondAttribute="top" id="px3-wN-KeT"/>
+                            <constraint firstItem="YJN-4A-UVC" firstAttribute="top" secondItem="RbP-OG-Qlu" secondAttribute="top" id="y3p-ti-B9X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginWidth" destination="Axs-DH-QCl" id="sts-GP-nRH"/>
+                        <outlet property="titleName" destination="edn-nI-9Kh" id="BUV-36-b9G"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V0H-FO-t0t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-20.239880059970016" y="109.59999999999999"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loginByGod" width="1024" height="768"/>
+    </resources>
+</document>

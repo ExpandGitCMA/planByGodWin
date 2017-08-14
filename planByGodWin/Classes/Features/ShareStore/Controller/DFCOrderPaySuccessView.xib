@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DFCOrderPaySuccessView">
+            <rect key="frame" x="0.0" y="0.0" width="700" height="450"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜，支付成功！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hzz-nV-qYS">
+                    <rect key="frame" x="334.5" y="120" width="131" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="编号:20170313115912345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nss-Ti-uFO">
+                    <rect key="frame" x="100" y="217.5" width="250" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金额：¥10.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HeS-n1-FtT">
+                    <rect key="frame" x="350" y="217.5" width="250" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间：20170313 15:43" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoX-yy-ICL">
+                    <rect key="frame" x="350" y="297" width="250" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PaySuccess" translatesAutoresizingMaskIntoConstraints="NO" id="HR4-Q5-RJI">
+                    <rect key="frame" x="257.5" y="102.5" width="67" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="34i-C0-Lk5"/>
+                        <constraint firstAttribute="width" constant="67" id="jUl-1l-bdW"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商家编号：12345678" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rK-Ej-8bf">
+                    <rect key="frame" x="100" y="297" width="250" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="即将开始下载" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Duu-eO-kou">
+                    <rect key="frame" x="210" y="376.5" width="280" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="fie-4v-dvf"/>
+                        <constraint firstAttribute="height" constant="35" id="vBb-GH-k4U"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1rK-Ej-8bf" firstAttribute="trailing" secondItem="nss-Ti-uFO" secondAttribute="trailing" id="2Ue-w7-R9H"/>
+                <constraint firstItem="HR4-Q5-RJI" firstAttribute="centerY" secondItem="Hzz-nV-qYS" secondAttribute="centerY" id="5V1-Oa-DtH"/>
+                <constraint firstItem="Duu-eO-kou" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5sb-zx-guS"/>
+                <constraint firstItem="RoX-yy-ICL" firstAttribute="centerY" secondItem="1rK-Ej-8bf" secondAttribute="centerY" id="GJP-i7-ogH"/>
+                <constraint firstItem="HeS-n1-FtT" firstAttribute="leading" secondItem="nss-Ti-uFO" secondAttribute="trailing" id="Gch-a1-liU"/>
+                <constraint firstItem="1rK-Ej-8bf" firstAttribute="leading" secondItem="nss-Ti-uFO" secondAttribute="leading" id="Hf5-gr-6fg"/>
+                <constraint firstItem="RoX-yy-ICL" firstAttribute="leading" secondItem="HeS-n1-FtT" secondAttribute="leading" id="JNq-Oo-fz4"/>
+                <constraint firstItem="RoX-yy-ICL" firstAttribute="trailing" secondItem="HeS-n1-FtT" secondAttribute="trailing" id="LHs-NB-H7w"/>
+                <constraint firstItem="1rK-Ej-8bf" firstAttribute="top" secondItem="nss-Ti-uFO" secondAttribute="bottom" constant="60" id="NzH-rQ-sag"/>
+                <constraint firstItem="HeS-n1-FtT" firstAttribute="width" secondItem="nss-Ti-uFO" secondAttribute="width" id="SXP-eT-Vzv"/>
+                <constraint firstItem="nss-Ti-uFO" firstAttribute="top" secondItem="HR4-Q5-RJI" secondAttribute="bottom" constant="60" id="TiJ-No-2mD"/>
+                <constraint firstItem="Hzz-nV-qYS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="120" id="Wfl-m0-uCX"/>
+                <constraint firstItem="HeS-n1-FtT" firstAttribute="centerY" secondItem="nss-Ti-uFO" secondAttribute="centerY" id="YZU-Dz-0M1"/>
+                <constraint firstItem="Hzz-nV-qYS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="50" id="b6U-Qu-1R7"/>
+                <constraint firstAttribute="trailing" secondItem="HeS-n1-FtT" secondAttribute="trailing" constant="100" id="c9s-4M-8N8"/>
+                <constraint firstItem="HeS-n1-FtT" firstAttribute="height" secondItem="nss-Ti-uFO" secondAttribute="height" id="er3-Aa-CAI"/>
+                <constraint firstItem="nss-Ti-uFO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="100" id="kLg-Ug-4Vr"/>
+                <constraint firstItem="Duu-eO-kou" firstAttribute="top" secondItem="1rK-Ej-8bf" secondAttribute="bottom" constant="60" id="n66-5H-47L"/>
+                <constraint firstItem="Hzz-nV-qYS" firstAttribute="leading" secondItem="HR4-Q5-RJI" secondAttribute="trailing" constant="10" id="vEZ-m5-Fo9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="dateLabel" destination="RoX-yy-ICL" id="tTO-D1-Qys"/>
+                <outlet property="orderCodeLabel" destination="nss-Ti-uFO" id="Nvp-u8-UxQ"/>
+                <outlet property="priceLabel" destination="HeS-n1-FtT" id="dep-qN-Abw"/>
+                <outlet property="sellerCodeLabel" destination="1rK-Ej-8bf" id="HOT-pT-rI4"/>
+                <outlet property="tipLabel" destination="Duu-eO-kou" id="Nd3-g4-Iyh"/>
+            </connections>
+            <point key="canvasLocation" x="-71" y="-347"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PaySuccess" width="67" height="55"/>
+    </resources>
+</document>

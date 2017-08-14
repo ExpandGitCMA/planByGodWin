@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DFCContactFileController">
+            <connections>
+                <outlet property="collectionView" destination="MU4-hD-TUJ" id="kQI-iR-iYm"/>
+                <outlet property="searchTextField" destination="deB-bC-xAu" id="OSq-SH-4uC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FbW-ZY-49i">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="输入课件名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="deB-bC-xAu">
+                            <rect key="frame" x="107.5" y="6" width="240" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="240" id="hIu-Ar-fj9"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="答尔问云盘" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mn-CQ-TjC">
+                            <rect key="frame" x="24.5" y="6" width="75" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="AIx-q8-Kx7"/>
+                                <constraint firstAttribute="width" constant="75" id="hAk-Hz-9mk"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MU4-hD-TUJ">
+                            <rect key="frame" x="0.0" y="51" width="375" height="572"/>
+                            <color key="backgroundColor" red="0.92540907859999999" green="0.92554211620000004" blue="0.92537993190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5hI-5Y-P3D">
+                                <size key="itemSize" width="180" height="150"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="2yI-XG-KNz"/>
+                                <outlet property="delegate" destination="-1" id="GFG-nf-Njd"/>
+                            </connections>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94509803920000002" green="0.94509803920000002" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="deB-bC-xAu" firstAttribute="height" secondItem="6Mn-CQ-TjC" secondAttribute="height" id="2H8-pu-Qny"/>
+                        <constraint firstItem="6Mn-CQ-TjC" firstAttribute="top" secondItem="FbW-ZY-49i" secondAttribute="top" constant="6" id="6ix-WN-JzA"/>
+                        <constraint firstItem="MU4-hD-TUJ" firstAttribute="leading" secondItem="FbW-ZY-49i" secondAttribute="leading" id="71Y-jY-RAy"/>
+                        <constraint firstItem="MU4-hD-TUJ" firstAttribute="top" secondItem="6Mn-CQ-TjC" secondAttribute="bottom" constant="10" id="Ecd-nB-Nw0"/>
+                        <constraint firstItem="deB-bC-xAu" firstAttribute="centerX" secondItem="FbW-ZY-49i" secondAttribute="centerX" constant="40" id="KmI-in-gNF"/>
+                        <constraint firstItem="deB-bC-xAu" firstAttribute="centerY" secondItem="6Mn-CQ-TjC" secondAttribute="centerY" id="ZmJ-SI-7ci"/>
+                        <constraint firstAttribute="bottom" secondItem="MU4-hD-TUJ" secondAttribute="bottom" id="alS-VS-sfT"/>
+                        <constraint firstAttribute="trailing" secondItem="MU4-hD-TUJ" secondAttribute="trailing" id="mco-RT-5Ao"/>
+                        <constraint firstItem="deB-bC-xAu" firstAttribute="leading" secondItem="6Mn-CQ-TjC" secondAttribute="trailing" constant="8" id="x3U-ka-PR5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FbW-ZY-49i" secondAttribute="bottom" id="a6t-jt-foJ"/>
+                <constraint firstAttribute="trailing" secondItem="FbW-ZY-49i" secondAttribute="trailing" id="efD-ha-jJe"/>
+                <constraint firstItem="FbW-ZY-49i" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="gZg-v5-vMe"/>
+                <constraint firstItem="FbW-ZY-49i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yAz-8i-dHa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="-995" y="-23"/>
+        </view>
+    </objects>
+</document>
